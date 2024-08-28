@@ -1,0 +1,59 @@
+.contact-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding-top: 200px;
+  
+  padding: 20px;
+  color: #fff;
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-phone, .contact-email {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.contact-title, .contact-phone, .contact-email {
+  color: white ;
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 20px auto;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-phone, .contact-email {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    margin: 10px auto;
+  }
+
+  .contact-title {
+    font-size: 18px;
+  }
+
+  .contact-phone, .contact-email {
+    font-size: 16px;
+  }
+}
