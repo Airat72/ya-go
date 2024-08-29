@@ -12,7 +12,7 @@ const Main = () => {
     const feedback = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('http://localhost:3001/api/feedback', {
+      const response = await fetch('https://ya-go-backend.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
