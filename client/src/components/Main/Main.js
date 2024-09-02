@@ -16,6 +16,7 @@ const Main = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
         },
         body: JSON.stringify(feedback),
       });
