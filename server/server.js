@@ -40,6 +40,7 @@ server.post('/api/feedback', async (req, res) => {
       `,
     });
 
+    res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
     return res.status(200).send({
       status: 200,
       message: 'Успешня отправка',
