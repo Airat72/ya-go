@@ -12,7 +12,8 @@ const Main = () => {
     const feedback = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('https://ya-go-backend.onrender.com/api/feedback', {
+      const timestamp = Date.now();
+      const response = await fetch(`https://ya-go-backend.onrender.com/api/feedback?t=${timestamp}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
