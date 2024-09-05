@@ -7,7 +7,7 @@ dotenv.config();
 const server = express();
 
 const corsOptions = {
-  origin: 'https://ya-go-backend.onrender.com', 
+  origin: 'https://ya-go-backend.onrender.com/api/feedback', 
   optionsSuccessStatus: 200,
 };
 
