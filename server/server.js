@@ -6,7 +6,12 @@ dotenv.config();
 
 const server = express();
 
-server.use(cors());
+const corsOptions = {
+  origin: 'http://ya-go-backend.onrender.com/api/feedback', 
+  optionsSuccessStatus: 200,
+};
+
+server.use(cors(corsOptions));
 server.use(express.static(__dirname + '/public'));
 server.use(express.json());
 
@@ -40,11 +45,7 @@ server.post('/api/feedback', async (req, res) => {
       `,
     });
 
-   
     res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
-  
-
-    
     return res.status(200).send({
       status: 200,
       message: 'Успешня отправка',
