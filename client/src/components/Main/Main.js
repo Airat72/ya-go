@@ -13,7 +13,7 @@ const Main = () => {
 
     try {
       const timestamp = Date.now();
-      const response = await fetch('http://ya-go-backend.onrender.com/api/feedback', {
+      const response = await fetch('https://ya-go-backend.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
