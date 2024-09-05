@@ -42,8 +42,7 @@ server.post('/api/feedback', async (req, res) => {
 
    
     res.set('Cache-Control', 'no-cache, no-store, must-revalidate');
-    res.set('Pragma', 'no-cache');
-    res.set('Expires', '0');
+  
 
     
     return res.status(200).send({
